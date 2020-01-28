@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:background="@color/yellow"
+    tools:context=".uploadData">
+<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userData"
+        android:background="#00000000"
+        app:layout_constraintTop_toTopOf="parent" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/uploadLayout"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:weightSum="10">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/name_border"
+            android:focusable="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:hint="@string/enter_the_name_of_the_person"
+            android:layout_weight="2"
+            android:inputType="text">
+        </EditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/upload"
+            android:background="@color/black"
+            android:text="@string/upload"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:layout_weight="8">
+        </Button>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
